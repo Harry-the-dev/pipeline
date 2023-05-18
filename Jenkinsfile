@@ -16,7 +16,10 @@
             }
 
             stage('UNIT Testing'){
-               steps {
+
+                steps {
+
+                    
                    sh 'mvn test'
             }
             }
