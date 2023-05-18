@@ -33,5 +33,13 @@
                     sh 'mvn clean install'
                 }
             }
+
+            stage ('static code analysis'){
+                steps{
+                    withSonarQubeEnv(credentialsId: 'Jenkins_Auth') {        
+                        
+                    }
+                }
+            }
         }
     }
